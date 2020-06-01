@@ -22,6 +22,10 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * The algorithm functionality was described in the README.md file at the repository.
+ * @author Vitomir M
+ */
 public class Node {
 
     private static final int BACKLOG = 10;
