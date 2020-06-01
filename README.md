@@ -10,7 +10,9 @@ where the line in which the node parameters are placed represents the source nod
 that line represent destination nodes.
 
 The nodes are connected via TCP as the graph (configuration file) suggests. 
-After selecting the root node, it sends its neighbour nodes (children) a message with of type "search".
+When all of the nodes/processes from the graph list begin execution, the root node needs to explicitly send a "create" message to
+start the spanning tree formation.
+The root node then sends its neighbour nodes (children) a message of type "search".
 After the child nodes acquire the "search" message, they mark the sender as their parent and send the "search" message to their 
 descendants. 
 The descendants can reject the sender as their parent if they already have a parent.
