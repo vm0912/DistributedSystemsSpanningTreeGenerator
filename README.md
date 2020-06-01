@@ -22,6 +22,8 @@ and port number), the order of messages is not deterministic.
 After the process of sending "search" messages is finished, the tree is officially created.
 From that point, the root node can send a message to communicate with other nodes which traverses the created tree.
 
+To start the nodes simultaneously, the script named "startup.bat" is created.
+
 The following image represents a valid node configuration and the algorithm itself. 
 
 ![alt text](https://github.com/vm0912/DistributedSystemsSpanningTreeGenerator/blob/master/graph.jpg?raw=true)
